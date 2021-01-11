@@ -5,12 +5,7 @@ import { Segment, Divider, Grid, Button } from "semantic-ui-react";
 import "./style.css";
 
 const Footer = () => (
-  <Segment
-    style={{
-      backgroundColor: "rgba(17, 17, 17, 1)",
-      margin: 0
-    }}
-  >
+  <Segment className="footer-all">
     <Segment.Group horizontal className="footer-content">
       <Segment>
         <List className="custom-list" horizontal>
@@ -38,10 +33,10 @@ const Footer = () => (
               <h5>FOLLOW US</h5>
             </Grid.Column>
             <Grid.Column width={10} className="social-icons">
-              <Button icon="instagram" inverted style={{ marginRight: 10 }} />
-              <Button icon="twitter" inverted style={{ marginRight: 10 }} />
-              <Button icon="facebook" inverted style={{ marginRight: 10 }} />
-              <Button icon="youtube" inverted style={{ marginRight: 10 }} />
+              <Button icon="instagram" inverted />
+              <Button icon="twitter" inverted />
+              <Button icon="facebook" inverted />
+              <Button icon="youtube" inverted />
             </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -51,37 +46,9 @@ const Footer = () => (
 
     <Segment className="footer-bottom">
       <List horizontal>
-        <List.Item
+        <List.Item>LANGUAGE:</List.Item>
 
-        /*        style={{
-            color: "#ffffff",
-            fontFamily: "Montserrat",
-            fontStyle: "normal",
-            fontWeight: "normal",
-            fontSize: 12,
-            lineHeight: "96%",
-            letterSpacing: "0.02em",
-            textTransform: "uppercase",
-          }} */
-        >
-          LANGUAGE:
-        </List.Item>
-
-        <List.Item
-        /*       style={{
-            color: "#ffffff",
-            fontWeight: "bold",
-            marginRight: 15,
-            fontFamily: "Montserrat",
-            fontStyle: "normal",
-            fontSize: 12,
-            lineHeight: "96%",
-            letterSpacing: "0.02em",
-            textTransform: "uppercase",
-          }} */
-        >
-          ENGLISH
-        </List.Item>
+        <List.Item>ENGLISH</List.Item>
       </List>
     </Segment>
   </Segment>
