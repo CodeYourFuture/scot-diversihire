@@ -27,7 +27,7 @@ const Footer = () => (
             </List.Item>
           </List>
         </Segment>
-        <Segment className="media-block">
+        {/*  <Segment className="media-block">
           <Grid>
             <Grid.Row columns={2}>
               <Grid.Column className="follow-us">
@@ -41,7 +41,21 @@ const Footer = () => (
               </Grid.Column>
             </Grid.Row>
           </Grid>
-        </Segment>
+        </Segment> */}
+
+        <Segment.Group className="media-block">
+          {/*     <Grid.Row columns={2}> */}
+          <Segment className="follow-us">
+            <h5>FOLLOW US</h5>
+          </Segment>
+          <Segment className="social-icons">
+            <Button icon="instagram" inverted />
+            <Button icon="twitter" inverted />
+            <Button icon="facebook" inverted />
+            <Button icon="youtube" inverted />
+          </Segment>
+          {/*  </Grid.Row> */}
+        </Segment.Group>
       </Segment.Group>
       <Divider className="divider" horizontal />
 
