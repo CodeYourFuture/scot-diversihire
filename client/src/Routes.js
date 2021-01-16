@@ -16,7 +16,7 @@ import Footer from "./components/Footer";
 const Routes = () => {
   return (
     <Router>
-      <MenuHeader />
+      {/*   <MenuHeader /> */}
       <Route path="/" exact component={Home} />
       <Route path="/about/" component={About} />
       <Route path="/status/" component={Status} />
